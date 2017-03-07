@@ -4,7 +4,7 @@ exports.config = {
   directConnect: true,
   specs: ['./features/*.feature'],
   cucumberOpts: {
-    require: ['./features/step_definitions/*.js'],
+    require: ['./features/step_definitions/*.step.js'],
     tags: ['@all'],
     format: 'pretty',
     profile: false
@@ -19,5 +19,4 @@ exports.config = {
     browser.driver.manage().window().setSize(width, height);
     browser.ignoreSynchronization = true;
   },
-  //baseUrl: 'http://www.google.com'
 }
